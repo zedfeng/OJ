@@ -6,7 +6,7 @@ public:
 	int removeDuplicates(vector<int>& nums) {
 		int len = nums.size();
 		int occur = 2;
-		//can be used for n duplicates. 
+		//can be used for occur = n duplicates. 
 		for (int i = occur - 1, j = i + 1; j < nums.size(); j++) {
 			if (nums[j] != nums[i - occur + 1]) {
 				nums[++i] = nums[j];
