@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LC_Median of Two Sorted Arrays.cpp" />
+    <ClCompile Include="LC_Longest Consecutive Sequence.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{5E7F0CAB-7915-4527-97BC-C3DCF5E21782}</ProjectGuid>

@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LC_Median of Two Sorted Arrays.cpp">
+    <ClCompile Include="LC_Longest Consecutive Sequence.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
