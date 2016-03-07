@@ -15,7 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LC_Longest Consecutive Sequence.cpp">
+    <ClCompile Include="LC_3Sum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LC_3Sum Closest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LC_4Sum.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
