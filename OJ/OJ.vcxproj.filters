@@ -15,15 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LC_Gas Station.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Candy.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Single Number.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="LC_Single Number II.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
