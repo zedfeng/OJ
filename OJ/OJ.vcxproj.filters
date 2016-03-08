@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LC_Climbing Stairs.cpp">
+    <ClCompile Include="LC_Gray Code.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LC_Set Matrix Zeroes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
