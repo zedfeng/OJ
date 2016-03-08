@@ -19,8 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LC_Plus One.cpp" />
-    <ClCompile Include="LC_Trapping Rain Water.cpp" />
+    <ClCompile Include="LC_Climbing Stairs.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{5E7F0CAB-7915-4527-97BC-C3DCF5E21782}</ProjectGuid>
