@@ -18,5 +18,8 @@
     <ClCompile Include="LC_Trapping Rain Water.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="LC_Plus One.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

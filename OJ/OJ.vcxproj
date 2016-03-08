@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="LC_Plus One.cpp" />
     <ClCompile Include="LC_Trapping Rain Water.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
