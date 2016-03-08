@@ -1,29 +1,27 @@
-#include<iostream>
 #include<vector>
 using namespace std;
-/*
-//设置count数组记录每一位1出现的次数，并且模3，剩下的即为single number
-class Solution {
-public:
-int singleNumber(vector<int>& nums) {
-int n = nums.size();
-int result = 0;
-const int width = sizeof(int) * 8;
-int count[width];
-fill_n(count, width, 0);
-for (int i = 0; i < n; i++){
-for (int j = 0; j < width; j++){
-count[j] += (nums[i] >> j) & 1;
-count[j] %= 3;
-}
-}
-for (int j = 0; j < width; j++){
-result += (count[j] << j);
-}
-return result;
-}
-};
-*/
+
+//class Solution {
+//public:
+//	int singleNumber(vector<int>& nums) {
+//		int n = nums.size();
+//		int result = 0;
+//		const int width = sizeof(int) * 8;
+//		int count[width];
+//		fill_n(count, width, 0);
+//		for (int i = 0; i < n; i++) {
+//			for (int j = 0; j < width; j++) {
+//				count[j] += (nums[i] >> j) & 1;
+//				count[j] %= 3;
+//			}
+//		}
+//		for (int j = 0; j < width; j++) {
+//			result += (count[j] << j);
+//		}
+//		return result;
+//	}
+//};
+
 /*
 The basic idea is to implement a modulo-3 counter (to count how many times "1" occurs) for each bit position.
 Such modulo-3 counter needs two bits (B1,B0) to represent.
@@ -49,7 +47,7 @@ public:
 	int singleNumber(vector<int>& nums) {
 		int n = nums.size();
 		int b0 = 0, b1 = 0, reset = 0;
-		for (int i = 0; i < n; i++){
+		for (int i = 0; i < n; i++) {
 			b1 |= b0&nums[i];
 			b0 ^= nums[i];
 			reset = b0&b1;

@@ -1,27 +1,27 @@
-#include<iostream>
 #include<vector>
 #include<numeric>
 using namespace std;
+
 class Solution {
 public:
 	int candy(vector<int>& ratings) {
 		int n = ratings.size();
 		vector<int> candy_num(n, 1);
-		for (int i = 1, num = 1; i<n; i++){
-			if (ratings[i]>ratings[i - 1]){
+		for (int i = 1, num = 1; i < n; i++) {
+			if (ratings[i] > ratings[i - 1]) {
 				num++;
 				candy_num[i] = num > candy_num[i] ? num : candy_num[i];
 			}
-			else{
+			else {
 				num = 1;
 			}
 		}
-		for (int i = n - 2, num = 1; i >= 0; i--){
-			if (ratings[i] > ratings[i + 1]){
+		for (int i = n - 2, num = 1; i >= 0; i--) {
+			if (ratings[i] > ratings[i + 1]) {
 				num++;
 				candy_num[i] = num > candy_num[i] ? num : candy_num[i];
 			}
-			else{
+			else {
 				num = 1;
 			}
 		}
