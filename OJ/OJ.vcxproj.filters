@@ -15,13 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LC_Next Permutation.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Permutation Sequence.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Valid Sudoku.cpp">
+    <ClCompile Include="LC_Trapping Rain Water.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
