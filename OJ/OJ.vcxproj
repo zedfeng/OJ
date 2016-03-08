@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LC_3Sum Closest.cpp" />
-    <ClCompile Include="LC_3Sum.cpp" />
-    <ClCompile Include="LC_4Sum.cpp" />
+    <ClCompile Include="LC_Next Permutation.cpp" />
+    <ClCompile Include="LC_Permutation Sequence.cpp" />
+    <ClCompile Include="LC_Valid Sudoku.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{5E7F0CAB-7915-4527-97BC-C3DCF5E21782}</ProjectGuid>

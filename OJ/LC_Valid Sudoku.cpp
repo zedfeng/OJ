@@ -2,49 +2,62 @@
 #include<algorithm>
 #include<vector>
 using namespace std;
+
 class Solution {
 public:
 	bool isValidSudoku(vector<vector<char>>& board) {
-		bool used[9];
-		//检查行
-		for (int i = 0; i < 9; ++i){
-			fill(used, used + 9, false);
-			for (int j = 0; j < 9; ++j){
-				if (!isValid(board[i][j], used)){
+		//check size
+		if (board.size() != 9 || board[0].size() != 9) {
+			return false;
+		}
+		//check column
+		for (int i = 0; i < board.size(); i++) {
+			vector<bool> check(board.size(), false);
+			for (int j = 0; j < board.size(); j++) {
+				if (!isdigit(board[j][i])) {
+					continue;
+				}
+				int k = board[j][i] - '0';
+				if (k == 0 || check[k - 1]) {
 					return false;
 				}
-			}
-			//检查列
-			fill(used, used + 9, false);
-			for (int j = 0; j < 9; ++j){
-				if (!isValid(board[j][i], used)){
-					return false;
-				}
+				check[k - 1] = true;
 			}
 		}
-		//检查块
-		for (int i = 0; i < 3; ++i){
-			for (int j = 0; j < 3; ++j){
-				fill(used, used + 9, false);
-				for (int m = i * 3; m < i * 3 + 3; ++m){
-					for (int n = j * 3; n < j * 3 + 3; ++n){
-						if (!isValid(board[m][n], used)){
+		//check row
+		for (int i = 0; i < board.size(); i++) {
+			vector<bool> check(board.size(), false);
+			for (int j = 0; j < board.size(); j++) {
+				if (!isdigit(board[i][j])) {
+					continue;
+				}
+				int k = board[i][j] - '0';
+				if (k == 0 || check[k - 1]) {
+					return false;
+				}
+				check[k - 1] = true;
+			}
+		}
+		//check block
+		for (int i = 0; i < 3; i++) {
+			for (int j = 0; j < 3; j++) {
+				int row = i * 3;
+				int col = j * 3;
+				vector<bool> check(board.size(), false);
+				for (int m = row; m < row + 3; m++) {
+					for (int n = col; n < col + 3; n++) {
+						if (!isdigit(board[m][n])) {
+							continue;
+						}
+						int k = board[m][n] - '0';
+						if (k == 0 || check[k - 1]) {
 							return false;
 						}
+						check[k - 1] = true;
 					}
 				}
 			}
 		}
 		return true;
-	}
-private:
-	bool isValid(char ch, bool used[9]){
-		if (ch == '.'){
-			return true;
-		}
-		if (used[ch - '1']){
-			return false;
-		}
-		return used[ch - '1'] = true;
 	}
 };

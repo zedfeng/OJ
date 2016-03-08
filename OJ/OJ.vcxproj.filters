@@ -15,13 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LC_3Sum.cpp">
+    <ClCompile Include="LC_Next Permutation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="LC_3Sum Closest.cpp">
+    <ClCompile Include="LC_Permutation Sequence.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="LC_4Sum.cpp">
+    <ClCompile Include="LC_Valid Sudoku.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
