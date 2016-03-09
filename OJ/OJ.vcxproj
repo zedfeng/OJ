@@ -18,11 +18,6 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="LC_Partition List .cpp" />
-    <ClCompile Include="LC_Remove Duplicates from Sorted List .cpp" />
-    <ClCompile Include="LC_Remove Duplicates from Sorted List II .cpp" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{5E7F0CAB-7915-4527-97BC-C3DCF5E21782}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
