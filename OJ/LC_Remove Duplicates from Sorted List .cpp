@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+
 struct ListNode {
 	int val;
 	ListNode *next;
@@ -13,14 +14,14 @@ public:
 		ListNode* prev;
 		ListNode* curr;
 		prev = dummy.next;
-		curr = head == NULL ? NULL : prev->next;
-		while (curr != NULL){
-			if (curr->val == prev->val){
+		curr = prev ? prev->next : NULL;
+		while (curr != NULL) {
+			if (curr->val == prev->val) {
 				prev->next = curr->next;
 				delete curr;
 				curr = prev->next;
 			}
-			else{
+			else {
 				prev = prev->next;
 				curr = prev->next;
 			}

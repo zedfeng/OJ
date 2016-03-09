@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+
 struct ListNode {
 	int val;
 	ListNode *next;
@@ -8,19 +9,20 @@ struct ListNode {
 class Solution {
 public:
 	ListNode* deleteDuplicates(ListNode* head) {
-		if (head == NULL || head->next == NULL){
+		if (head == NULL || head->next == NULL) {
 			return head;
 		}
 		ListNode* curr = head->next;
-		if (curr->val == head->val){
-			while (curr != NULL&&curr->val == head->val){
-				delete curr;
+		if (curr->val == head->val) {
+			while (curr != NULL&&curr->val == head->val) {
+				ListNode* tmp = curr;
 				curr = curr->next;
+				delete tmp;
 			}
 			delete head;
 			return deleteDuplicates(curr);
 		}
-		else{
+		else {
 			head->next = deleteDuplicates(curr);
 			return head;
 		}

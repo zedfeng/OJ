@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+
 struct ListNode {
 	int val;
 	ListNode *next;
@@ -12,12 +13,12 @@ public:
 		ListNode right_dummy(-1);
 		auto left_cur = &left_dummy;
 		auto right_cur = &right_dummy;
-		for (ListNode *cur = head; cur != NULL; cur = cur->next){
-			if (cur->val < x){
+		for (ListNode *cur = head; cur != NULL; cur = cur->next) {
+			if (cur->val < x) {
 				left_cur->next = cur;
 				left_cur = cur;
 			}
-			else{
+			else {
 				right_cur->next = cur;
 				right_cur = cur;
 			}
