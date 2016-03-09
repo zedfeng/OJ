@@ -19,10 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LC_Add Two Numbers.cpp" />
     <ClCompile Include="LC_Reverse Linked List II.cpp" />
     <ClCompile Include="LC_Reverse Linked List.cpp" />
-    <ClCompile Include="LC_Single Number II.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{5E7F0CAB-7915-4527-97BC-C3DCF5E21782}</ProjectGuid>

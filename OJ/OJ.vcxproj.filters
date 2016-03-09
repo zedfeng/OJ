@@ -15,12 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LC_Single Number II.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Add Two Numbers.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="LC_Reverse Linked List II.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
