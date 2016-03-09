@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+
 struct ListNode {
 	int val;
 	ListNode *next;
@@ -8,11 +9,11 @@ struct ListNode {
 class Solution {
 public:
 	ListNode* reverseList(ListNode* head) {
-		if (head == NULL || head->next == NULL){
+		if (head == NULL || head->next == NULL) {
 			return head;
 		}
 		ListNode *prev, *curr, *next;
-		for (prev = head, curr = prev->next, next = curr->next; curr; prev = curr, curr = next, next = next ? next->next : NULL){
+		for (prev = head, curr = prev->next, next = curr->next; curr; prev = curr, curr = next, next = next ? next->next : NULL) {
 			curr->next = prev;
 		}
 		head->next = NULL;
