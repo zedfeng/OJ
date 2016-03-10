@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+
 struct ListNode {
 	int val;
 	ListNode *next;
@@ -10,20 +11,19 @@ public:
 	ListNode* removeNthFromEnd(ListNode* head, int n) {
 		ListNode dummy(-1);
 		dummy.next = head;
-		ListNode *p, *q;
-		p = &dummy;
-		q = &dummy;
-		while (n != 0){
-			q = q->next;
+		//finish in one path
+		ListNode *p = &dummy, *q = &dummy;
+		while (n) {
 			n--;
+			q = q->next;
 		}
-		while (q->next != NULL){
+		while (q->next) {
 			p = p->next;
 			q = q->next;
 		}
-		ListNode *del = p->next;
-		p->next = del->next;
-		delete del;
+		ListNode *tmp = p->next;
+		p->next = p->next->next;
+		delete tmp;
 		return dummy.next;
 	}
 };

@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+
 struct ListNode {
 	int val;
 	ListNode *next;
@@ -11,11 +12,13 @@ public:
 		ListNode *fast, *slow;
 		fast = head;
 		slow = head;
-		while (fast&&fast->next){
+		while (fast&&fast->next) {
 			slow = slow->next;
 			fast = fast->next->next;
-			if (slow == fast)break;
+			if (slow == fast) {
+				return true;
+			}
 		}
-		return fast&&fast->next;
+		return false;
 	}
 };

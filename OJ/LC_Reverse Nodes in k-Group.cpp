@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+
 struct ListNode {
 	int val;
 	ListNode *next;
@@ -8,32 +9,26 @@ struct ListNode {
 class Solution {
 public:
 	ListNode* reverseKGroup(ListNode* head, int k) {
-		if (head == NULL || k == 0 || k == 1){
+		if (k == 0 || k == 1) {
 			return head;
 		}
-		ListNode *count = head;
-		int len = 0;
-		while (count != NULL){
-			count = count->next;
-			len++;
-		}
-		if (len < k){
-			return head;
-		}
-		//至少有k个结点且k>=2
-		//递归求解
-		else{
-			ListNode dummy(-1);
-			dummy.next = head;
-			ListNode *prev, *curr, *next;
-			int num = k - 2;
-			for (prev = &dummy, curr = dummy.next, next = curr->next; num >= 0; num--, next = curr->next){
-				curr->next = next->next;
-				next->next = prev->next;
-				prev->next = next;
+		ListNode *end, *prev, *curr;
+		end = head;
+		for (int i = 0; i < k; i++) {
+			if (end == NULL) {
+				return head;
 			}
-			curr->next = reverseKGroup(next, k);
-			return dummy.next;
+			end = end->next;
 		}
+		prev = head;
+		curr = prev->next;
+		while (curr != end) {
+			prev->next = curr->next;
+			curr->next = head;
+			head = curr;
+			curr = prev->next;
+		}
+		prev->next = reverseKGroup(curr, k);
+		return head;
 	}
 };

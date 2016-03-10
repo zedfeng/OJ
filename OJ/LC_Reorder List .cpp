@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+
 struct ListNode {
 	int val;
 	ListNode *next;
@@ -8,40 +9,36 @@ struct ListNode {
 class Solution {
 public:
 	void reorderList(ListNode* head) {
-		if (head == NULL || head->next == NULL){
-			return;
-		}
-		ListNode *prev = NULL, *slow, *fast;
+		ListNode *slow, *fast, *prev, *next;
 		slow = head;
 		fast = head;
-		while (fast&&fast->next){
-			prev = slow;
+		prev = head;
+		next = NULL;
+		while (fast&&fast->next) {
 			slow = slow->next;
 			fast = fast->next->next;
 		}
-		prev->next = NULL;
-		slow = reverse(slow);
-		ListNode *curr = head;
-		while (curr->next != NULL){
-			ListNode *tmp = curr->next;
-			curr->next = slow;
-			slow = slow->next;
-			curr->next->next = tmp;
-			curr = tmp;
+		next = slow ? slow->next : NULL;
+		if (next) {
+			slow->next = NULL;
+			next = reverseList(next);
+			ListNode* tmp;
+			while (next) {
+				tmp = prev->next;
+				prev->next = next;
+				next = next->next;
+				prev->next->next = tmp;
+				prev = tmp;
+			}
 		}
-		curr->next = slow;
-		return;
 	}
-private:
-	ListNode* reverse(ListNode* head){
-		if (head == NULL || head->next == NULL){
-			return head;
+	ListNode* reverseList(ListNode* head) {
+		ListNode *prev, *curr;
+		for (prev = head, curr = prev ? prev->next : NULL; curr; curr = prev->next) {
+			prev->next = curr->next;
+			curr->next = head;
+			head = curr;
 		}
-		ListNode *prev, *curr, *next;
-		for (prev = head, curr = head->next, next = curr->next; curr; prev = curr, curr = next, next = next ? next->next : NULL){
-			curr->next = prev;
-		}
-		head->next = NULL;
-		return prev;
+		return head;
 	}
 };

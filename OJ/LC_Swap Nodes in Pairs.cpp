@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+
 struct ListNode {
 	int val;
 	ListNode *next;
@@ -8,18 +9,13 @@ struct ListNode {
 class Solution {
 public:
 	ListNode* swapPairs(ListNode* head) {
-		ListNode *prev, *curr;
+		ListNode *prev, *curr, *next;
 		ListNode dummy(-1);
 		dummy.next = head;
-		prev = &dummy;
-		curr = prev->next;
-		while (curr != NULL&&curr->next != NULL){
-			prev->next = curr->next;
-			prev = prev->next;
-			curr->next = prev->next;
-			prev->next = curr;
-			prev = prev->next;
-			curr = curr->next;
+		for (prev = &dummy, curr = prev->next, next = curr ? curr->next : NULL; next; prev = curr, curr = curr->next, next = curr ? curr->next : NULL) {
+			prev->next = next;
+			curr->next = next->next;
+			next->next = curr;
 		}
 		return dummy.next;
 	}
