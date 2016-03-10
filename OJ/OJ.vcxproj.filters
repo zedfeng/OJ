@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LC_LRU Cache.cpp">
+    <ClCompile Include="LC_Implement strStr().cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
