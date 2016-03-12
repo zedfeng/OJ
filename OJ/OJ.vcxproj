@@ -19,7 +19,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="LC_Count and Say.cpp" />
     <ClCompile Include="LC_Implement strStr().cpp" />
+    <ClCompile Include="LC_Integer to Roman.cpp" />
+    <ClCompile Include="LC_Longest Palindromic Substring.cpp" />
+    <ClCompile Include="LC_Regular Expression Matching.cpp" />
+    <ClCompile Include="LC_Roman to Integer.cpp" />
+    <ClCompile Include="LC_Simplify Path.cpp" />
+    <ClCompile Include="LC_Valid Number.cpp" />
+    <ClCompile Include="LC_Wildcard Matching.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{5E7F0CAB-7915-4527-97BC-C3DCF5E21782}</ProjectGuid>

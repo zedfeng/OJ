@@ -1,27 +1,33 @@
 #include<string>
 using namespace std;
+
 class Solution {
 public:
 	int myAtoi(string str) {
-		int i = 0;
-		int result = 0;
+		auto scan = str.begin();
+		int num = 0;
 		int sign = 1;
-		while (str[i] == ' '&&i < str.length()){
-			i++;
+		while (scan < str.end() && *scan == ' ') {
+			scan++;
 		}
-		if (str[i] == '+'){
-			i++;
+		if (*scan == '+') {
+			scan++;
 		}
-		else if (str[i] == '-'){
+		else if (*scan == '-') {
+			scan++;
 			sign = -1;
-			i++;
 		}
-		for (; str[i] >= '0'&&str[i] <= '9'&&i<str.length(); i++){
-			if (result>INT_MAX / 10 || result == INT_MAX / 10 && str[i] - '0' > INT_MAX % 10){
-				return sign == -1 ? INT_MIN : INT_MAX;
+		while (scan < str.end()) {
+			if (*scan<'0' || *scan>'9') {
+				break;
 			}
-			result = result * 10 + str[i] - '0';
+			if (num > INT_MAX / 10 || (num == INT_MAX / 10 && *scan - '0' > INT_MAX % 10)) {
+				return sign == 1 ? INT_MAX : INT_MIN;
+			}
+			num *= 10;
+			num += *scan - '0';
+			scan++;
 		}
-		return sign*result;
+		return num*sign;
 	}
 };

@@ -1,19 +1,22 @@
 #include<string>
 #include<vector>
 using namespace std;
+
 class Solution {
 public:
 	string longestCommonPrefix(vector<string>& strs) {
-		if (strs.empty()){
-			return "";
+		string commonPrefix;
+		if (strs.empty()) {
+			return commonPrefix;
 		}
-		for (int index = 0; index < strs[0].size(); index++){
-			for (int i = 1; i < strs.size(); i++){
-				if (strs[i][index] != strs[0][index]){
-					return strs[0].substr(0, index);
+		for (int i = 0; i < strs[0].size(); i++) {
+			for (int j = 1; j < strs.size(); j++) {
+				if (i >= strs[j].size() || strs[j][i] != strs[0][i]) {
+					return commonPrefix;
 				}
 			}
+			commonPrefix.push_back(strs[0][i]);
 		}
-		return strs[0];
+		return commonPrefix;
 	}
 };
