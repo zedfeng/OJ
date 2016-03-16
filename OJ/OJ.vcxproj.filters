@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LC_Implement strStr().cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="LC_Longest Palindromic Substring.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -25,18 +22,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="LC_Wildcard Matching.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Valid Number.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Integer to Roman.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Roman to Integer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Count and Say.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="LC_Simplify Path.cpp">
