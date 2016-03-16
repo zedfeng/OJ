@@ -2,40 +2,36 @@
 #include<vector>
 #include<stack>
 using namespace std;
+
 class Solution {
 public:
 	int evalRPN(vector<string>& tokens) {
-		stack<string> num_stack;
-		for (auto token : tokens){
-			if (is_operator(token)){
-				int y = stoi(num_stack.top());
-				num_stack.pop();
-				int x = stoi(num_stack.top());
-				num_stack.pop();
-				int result = 0;
-				if (token[0] == '+'){
-					result = x + y;
+		int x, y;
+		string op = "+-*/";
+		stack<string> tokens_stack;
+		for (auto str : tokens) {
+			if (op.find(str) != string::npos) {
+				x = stoi(tokens_stack.top());
+				tokens_stack.pop();
+				y = stoi(tokens_stack.top());
+				tokens_stack.pop();
+				if (str == "+") {
+					tokens_stack.push(to_string(y + x));
 				}
-				else if (token[0] == '-'){
-					result = x - y;
+				else if (str == "-") {
+					tokens_stack.push(to_string(y - x));
 				}
-				else if (token[0] == '*'){
-					result = x*y;
+				else if (str == "*") {
+					tokens_stack.push(to_string(y * x));
 				}
-				else{
-					result = x / y;
+				else {
+					tokens_stack.push(to_string(y / x));
 				}
-				num_stack.push(to_string(result));
 			}
-			else{
-				num_stack.push(token);
+			else {
+				tokens_stack.push(str);
 			}
 		}
-		return stoi(num_stack.top());
-	}
-private:
-	bool is_operator(string& op){
-		string op_str = "+-*/";
-		return op.size() == 1 && op_str.find(op) != string::npos;
+		return stoi(tokens_stack.top());
 	}
 };
