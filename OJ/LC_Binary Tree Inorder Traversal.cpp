@@ -1,6 +1,7 @@
 #include<stack>
 #include<vector>
 using namespace std;
+
 struct TreeNode {
 	int val;
 	TreeNode *left;
@@ -9,31 +10,22 @@ struct TreeNode {
 };
 class Solution {
 public:
-	vector<int> postorderTraversal(TreeNode* root) {
+	vector<int> inorderTraversal(TreeNode* root) {
 		vector<int> result;
-		const TreeNode *curr, *prev;
-		stack<const TreeNode *> s;
-		curr = root;
-		do{
-			while (curr != NULL){
-				s.push(curr);
-				curr = curr->left;
+		stack<TreeNode*> stk;
+		TreeNode* p = root;
+		while (p != NULL || !stk.empty()) {
+			if (p != NULL) {
+				stk.push(p);
+				p = p->left;
 			}
-			prev = NULL;
-			while (!s.empty()){
-				curr = s.top();
-				s.pop();
-				if (curr->right == prev){
-					result.push_back(curr->val);
-					prev = curr;
-				}
-				else{
-					s.push(curr);
-					curr = curr->right;
-					break;
-				}
+			else {
+				p = stk.top();
+				stk.pop();
+				result.push_back(p->val);
+				p = p->right;
 			}
-		} while (!s.empty());
+		}
 		return result;
 	}
 };

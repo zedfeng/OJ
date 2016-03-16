@@ -1,6 +1,7 @@
 #include<stack>
 #include<vector>
 using namespace std;
+
 struct TreeNode {
 	int val;
 	TreeNode *left;
@@ -11,21 +12,20 @@ class Solution {
 public:
 	vector<int> preorderTraversal(TreeNode* root) {
 		vector<int> result;
-		const TreeNode *p;
-		stack<const TreeNode *>s;
-		p = root;
-		if (p != NULL){
-			s.push(p);
+		stack<TreeNode*> stk;
+		TreeNode* p = root;
+		if (root != NULL) {
+			stk.push(root);
 		}
-		while (!s.empty()){
-			p = s.top();
-			s.pop();
+		while (!stk.empty()) {
+			p = stk.top();
+			stk.pop();
 			result.push_back(p->val);
-			if (p->right != NULL){
-				s.push(p->right);
+			if (p->right) {
+				stk.push(p->right);
 			}
-			if (p->left != NULL){
-				s.push(p->left);
+			if (p->left) {
+				stk.push(p->left);
 			}
 		}
 		return result;
