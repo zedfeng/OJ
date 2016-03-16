@@ -14,13 +14,14 @@ public:
 				++p_it;
 				continue;
 			}
-			if (*p_it == '*') {
+			else if (*p_it == '*') {
 				s_star = s_it;
 				p_star = p_it;
 				++p_it;
 				continue;
 			}
-			if (*p_star) {
+			else if (*p_star) {
+				//if there exists a * before, rematch the strings from the new beginnings.
 				p_it = p_star + 1;
 				s_it = ++s_star;
 				continue;
