@@ -1,25 +1,26 @@
 #include<string>
 #include<stack>
 using namespace std;
+
 class Solution {
 public:
 	bool isValid(string s) {
-		stack<char> str_stack;
 		string left = "([{";
 		string right = ")]}";
-		for (int i = 0; i < s.length(); i++){
-			if (left.find(s[i]) != string::npos){
-				str_stack.push(s[i]);
+		stack<char> s_stack;
+		for (auto c : s) {
+			if (left.find(c) != string::npos) {
+				s_stack.push(c);
 			}
-			if (right.find(s[i]) != string::npos){
-				if (!str_stack.empty() && left[right.find(s[i])] == str_stack.top()){
-					str_stack.pop();
-				}
-				else{
+			else {
+				if (s_stack.empty() || s_stack.top() != left[right.find(c)]) {
 					return false;
+				}
+				else {
+					s_stack.pop();
 				}
 			}
 		}
-		return str_stack.empty();
+		return s_stack.empty();
 	}
 };
