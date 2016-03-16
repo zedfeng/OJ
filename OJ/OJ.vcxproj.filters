@@ -24,8 +24,5 @@
     <ClCompile Include="LC_Wildcard Matching.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="LC_Simplify Path.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

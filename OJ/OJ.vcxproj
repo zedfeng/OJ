@@ -21,7 +21,6 @@
   <ItemGroup>
     <ClCompile Include="LC_Longest Palindromic Substring.cpp" />
     <ClCompile Include="LC_Regular Expression Matching.cpp" />
-    <ClCompile Include="LC_Simplify Path.cpp" />
     <ClCompile Include="LC_Wildcard Matching.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
