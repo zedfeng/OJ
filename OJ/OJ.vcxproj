@@ -19,15 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LC_Balanced Binary Tree.cpp" />
-    <ClCompile Include="LC_Binary Tree Level Order Traversal II.cpp" />
-    <ClCompile Include="LC_Binary Tree Level Order Traversal.cpp" />
-    <ClCompile Include="LC_Binary Tree Zigzag Level Order Traversal.cpp" />
-    <ClCompile Include="LC_Flatten Binary Tree to Linked List.cpp" />
     <ClCompile Include="LC_Populating Next Right Pointers in Each Node II.cpp" />
     <ClCompile Include="LC_Recover Binary Search Tree.cpp" />
-    <ClCompile Include="LC_Same Tree.cpp" />
-    <ClCompile Include="LC_Symmetric Tree.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{5E7F0CAB-7915-4527-97BC-C3DCF5E21782}</ProjectGuid>

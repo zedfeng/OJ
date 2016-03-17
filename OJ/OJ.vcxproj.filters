@@ -15,28 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LC_Binary Tree Level Order Traversal.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Binary Tree Level Order Traversal II.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Binary Tree Zigzag Level Order Traversal.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="LC_Recover Binary Search Tree.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Same Tree.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Symmetric Tree.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Balanced Binary Tree.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Flatten Binary Tree to Linked List.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="LC_Populating Next Right Pointers in Each Node II.cpp">
