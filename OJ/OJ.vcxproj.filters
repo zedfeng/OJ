@@ -15,91 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LC_Best Time to Buy and Sell Stock II .cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Best Time to Buy and Sell Stock III.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Best Time to Buy and Sell Stock IV .cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Best Time to Buy and Sell Stock.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Container With Most Water.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_First Missing Positive.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Insertion Sort List.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Jump Game II.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Jump Game.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Longest Substring Without Repeating Characters.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Maximal Rectangle.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Maximum Subarray.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Merge k Sorted Lists.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Merge Sorted Array.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Merge Two Sorted Lists.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Minimum Path Sum.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Palindrome Number .cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="LC_Palindrome Partitioning.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="LC_Populating Next Right Pointers in Each Node II.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Pow(x, n) .cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Search a 2D Matrix.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Search for a Range.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Search Insert Position.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Sort Colors.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Sort List.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Spiral Matrix II.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Spiral Matrix.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Sqrt(x).cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LC_Triangle.cpp">
+    <ClCompile Include="LC_Recover Binary Search Tree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
