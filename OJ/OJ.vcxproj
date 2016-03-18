@@ -19,8 +19,35 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="LC_Best Time to Buy and Sell Stock II .cpp" />
+    <ClCompile Include="LC_Best Time to Buy and Sell Stock III.cpp" />
+    <ClCompile Include="LC_Best Time to Buy and Sell Stock IV .cpp" />
+    <ClCompile Include="LC_Best Time to Buy and Sell Stock.cpp" />
+    <ClCompile Include="LC_Container With Most Water.cpp" />
+    <ClCompile Include="LC_First Missing Positive.cpp" />
+    <ClCompile Include="LC_Insertion Sort List.cpp" />
+    <ClCompile Include="LC_Jump Game II.cpp" />
+    <ClCompile Include="LC_Jump Game.cpp" />
+    <ClCompile Include="LC_Longest Substring Without Repeating Characters.cpp" />
+    <ClCompile Include="LC_Maximal Rectangle.cpp" />
+    <ClCompile Include="LC_Maximum Subarray.cpp" />
+    <ClCompile Include="LC_Merge k Sorted Lists.cpp" />
+    <ClCompile Include="LC_Merge Sorted Array.cpp" />
+    <ClCompile Include="LC_Merge Two Sorted Lists.cpp" />
+    <ClCompile Include="LC_Minimum Path Sum.cpp" />
+    <ClCompile Include="LC_Palindrome Number .cpp" />
+    <ClCompile Include="LC_Palindrome Partitioning.cpp" />
     <ClCompile Include="LC_Populating Next Right Pointers in Each Node II.cpp" />
-    <ClCompile Include="LC_Recover Binary Search Tree.cpp" />
+    <ClCompile Include="LC_Pow(x, n) .cpp" />
+    <ClCompile Include="LC_Search a 2D Matrix.cpp" />
+    <ClCompile Include="LC_Search for a Range.cpp" />
+    <ClCompile Include="LC_Search Insert Position.cpp" />
+    <ClCompile Include="LC_Sort Colors.cpp" />
+    <ClCompile Include="LC_Sort List.cpp" />
+    <ClCompile Include="LC_Spiral Matrix II.cpp" />
+    <ClCompile Include="LC_Spiral Matrix.cpp" />
+    <ClCompile Include="LC_Sqrt(x).cpp" />
+    <ClCompile Include="LC_Triangle.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{5E7F0CAB-7915-4527-97BC-C3DCF5E21782}</ProjectGuid>

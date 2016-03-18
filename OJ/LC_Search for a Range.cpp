@@ -1,6 +1,7 @@
 #include<vector>
 #include<iterator>
 using namespace std;
+
 class Solution {
 public:
 	vector<int> searchRange(vector<int>& nums, int target) {
